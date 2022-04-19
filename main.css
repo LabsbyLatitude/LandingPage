@@ -4,79 +4,68 @@
     box-sizing: border-box;
 }
 
-.nav {
-    background: black;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-
-
-navbar ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-navbar ul li 
-{
-    list-style: none;
-    margin-left: 20px;
-}
-
-navbar ul li a:hover , .active 
-{
+li, a, button {
+    font-weight: 500;
+    color: black;
     text-decoration: none;
-    padding: 6px 15px;
-    color: #fff;
-    border-radius: 20px;
+    font-size: 16px;
 }
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10%
+}
+
+.nav_links {
+    list-style: none
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 10px
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: rosybrown
+}
+
+button {
+    padding: 9px 18px;
+    background-color:turquoise;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: blue;
+    color: white
+}
+
 
 .main {
-    background-color:aliceblue
+    background-image: url('images/demo_image.gif');
+    background-repeat: no-repeat;
 }
 
-.main_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-self: center;
-    margin: 0 auto;
-    background-image: url('images/demo_image.gif');
-    opacity: 0.60;
-    z-index: 2;
-    height: 100vh;
-    width: 100%;
-    max-width: 1300px;
-}
 
 .main_content {
-    font-size: 1rem;
-    align-content: center;
-    justify-content: center;
-}
-
-.main_content h1 {
-    font-size: 4rem;
-    align-content: center;
-    justify-content: center;
-}
-
-.main_content button {
-    background-color: skyblue;
-    font-size: 2rem;
+    width: 90%;
+    height: 100%;
+    color: white
 }
 
 
 
-section {
+/** section {
   height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center; 
 }
@@ -104,4 +93,4 @@ section {
 }
 .four {
     background-color: #9d8099;
-}
+} **/
