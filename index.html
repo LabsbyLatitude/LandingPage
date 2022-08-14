@@ -1,126 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latitude Labs</title>
+    <head>
+        <meta charset="utf-8 />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Third party CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-    <!-- Project CSS -->
-    <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-    <!--- at some point, we're gonna put in a logo -->
-        <div class="nav">
-            <ul class="nav_links">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Solutions</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <a class="cta" href="#"><button>Join Today</button></a>
-    </header>
+        <title>Bootstrap Landing Page Tutorial</title>
+        <!-- Bootstrap CSS -->
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+            crossorigin="anonymous"
+        />
 
-    <!-- Hero Section  -->
-    <div class="main">
-        <div class="main_content">
-                <h1>Make Everyday a Field Trip</h1>
-                <p>Empowering teachers to create learning spaces everywhere</p>
-                <a class="cta" href="#"><button>Join Today</button></a>
-        </div>
-    </div>
-    <div class="creative">
-        <div class="creative-heading">
-            <h1>Creative Solutions</h1>
-            <p>Latitude Labs' flexible tools and real-time feedback foster critical thinking and problem solving skills.</p>
-            <img src="images/classroomdesks.jpg" />
-        </div>
-        <div class="creative-block-flexible">
-            <div class="flexible-content">
-                <h3>Flexible Tools</h3>
-                <p>Students are empowered to creatively design novel solutions using realistic tools rather than an answer bank</p>
-                <br>
-                <h3>Realtime Feedback</h3>
-                <p>Our live simulations help students actively practice problem-solving skills by iterating on their unique solutions to every prompt</p>
+        <!-- Main CSS -->
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
+  
+    <body>
+    <!-- NAVBAR -->
+
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- brand logo -->
+                <a class="navbar-brand" href="#">Latitude Labs</a>
+                <!-- toggler button -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- nav links -->
+                <div
+                    class="collapse navbar-collapse justify-content-end"
+                    id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" data-value="home" href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-value="about" href="#">
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-value="solutions" href="#">
+                                Solutions
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-value="faq" href="#">
+                                FAQ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-value="contact" href="#">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <img src="images/image14.gif" />
-        </div>
-    </div>
-    <div class="guided">
-        <div class="guided-heading">
-            <h1>Self-Guided Learning</h1>
-            <img src="images/chemistryclass.jpg" />
-        </div>
-        <div class="guided-block-immersive">
-            <div class="immersive-content">
-                <h3>Intuitive Lessons</h3>
-                <p>Clearly stated objectives and guided prompts ensure students never get lost in the process. Our effortless user interface frees teachers from impersonating IT so they can assist in more meaningful ways.</p>
-                <br>
-                <h3>Immersive Learning</h3>
-                <p>Welcome to a new way to design and learn online.</p>
+        </nav>
+
+        <!-- HERO -->
+
+        <header class="hero" id="hero">
+            <div class="overlay"></div>
+
+            <div class="container hero-content">
+                <div class="row row-cols-1 justify-items-center align-items-center">
+                    <div class="col description">
+                        <h1>
+                            Make Everyday A Field Trip
+                        </h1>
+                        <p>
+                            Empowering teachers to create immersive learning spaces everywhere
+                        </p>
+                        <button class="btn btn-primary" type="button" id="join_btn">
+                            Join Today
+                        </button>
+                    </div>
+                </div>
             </div>
-            <img src="images/image15.gif" />
+
+        </header>
+
+        <!-- FEATURES/SOLUTIONS -->
+        <div id="solutions">
+            <!-- CREATIVE SOLUTIONS -->
+            <section class="feature-group" id="creative-solutions">
+                <!-- header -->
+                <div class="fg-header">
+                    <div class="desc">
+                        <h1>Creative Solutions</h1>
+                        <p>Latitude Labs’ flexible tools and real-time feedback foster critical thinking and problem solving skills</p>
+                    </div>
+                    <img src="./images/creative_solutions/classroomdesks.jpg" alt="facing towards of the front blacboard of a schoolhouse classrooom with desks">
+                </div>
+                
+                <!-- features -->
+                
+                <!-- flexible tools -->
+                <div class="feature" id="feature-flexible-tools">
+                    <div class="container" style="min-width: 75%;">
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <!-- description -->
+                            <div class="col align-self-center">
+                                <div class="f-desc">
+                                    <h2>Flexible Tools</h2>
+                                    <p>Students are empowered to creatively design novel solutions using realistic tools rather than an answer bank</p>
+                                </div>
+                            </div>
+                            <!-- visual -->
+                            <div class="col">
+                                <div class="f-vid m-lg-5">
+                                    <video
+                                        loop 
+                                        muted 
+                                        playsinline 
+                                        class="img-fluid rounded-1"
+                                        poster="..."     
+                                        >   
+                                        <source src="./images/creative_solutions/marina_blocks.webm" type="video/webm">
+                                        <source src="..." type="video/mp4">
+                                        <img src="..." alt="adding and changing the size and position of concrete blocks in a virtual ripple tank.">
+                                        Your browser does not support the webm or mp4 video type.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- realtime feedback -->
+                <div class="feature" id="feature-realtime-feedback">
+                    <div class="container" style="min-width: 75%;">
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <!-- description -->
+                            <div class="col align-self-center">
+                                <div class="f-desc">
+                                    <h2>Realtime Feedback</h2>
+                                    <p>Our live simulations help students actively practice problem-solving skills by improving on their unique solutions with each new prompt</p>
+                                </div>
+                            </div>
+                            <!-- visual -->
+                            <div class="col">
+                                <div class="f-vid m-lg-5">
+                                    <video
+                                        loop 
+                                        muted 
+                                        playsinline 
+                                        class="img-fluid rounded-1"
+                                        poster="..."     
+                                        >   
+                                        <source src="./images/creative_solutions/marina_waves.webm" type="video/webm">
+                                        <source src="..." type="video/mp4">
+                                        <img src="..." alt="a contrete breakwater in a virtual ripple tank successfully stops boats in a marina from rocking">
+                                        Your browser does not support the webm or mp4 video type.
+                                    </video>
+                                </div>     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--  SELF-GUIDED LEARNING -->
+            <section class="feature-group" id="self-guided">
+                <!-- header -->
+                <div class="fg-header">
+                    <div class="desc">
+                        <h1>Self-Guided Learning</h1>
+                        <p>Our helpful lab guides and visual queues eliminate student confusion and teacher frustration</p>
+                    </div>
+                    <img src="./images/self-guided/chemistryclass.jpg" alt="facing towards of the front blacboard of a school chemistry class.">
+                </div>
+                
+                <!-- features -->
+                
+                <!-- intuitive lessons -->
+                <div class="feature" id="feature-intuitive-lessons">
+                    <div class="container" style="min-width: 75%;">
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <!-- description -->
+                            <div class="col align-self-center">
+                                <div class="f-desc">
+                                    <h2>Intuitive Lessons</h2>
+                                    <p>Clearly stated objectives and guided prompts ensure students never get lost in the process. Our effortless user interface frees teachers from playing tech support so they can assist in more meaningful ways.</p>
+                                </div>
+                            </div>
+                            <!-- visual -->
+                            <div class="col order-lg-1"> <!-- reorderd as the first item at screen sizes smaller than lg-->
+                                <div class="f-img m-lg-5">
+                                    <img class="img-fluid rounded-1" src="./images/self-guided/marina_objective.png" alt=".">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </div>
-    <div class="customizable">
-        <div class="customizable-heading">
-            <h1>Customizable</h1>
-        </div>
-        <div class="customizable-block-essential">
-            <h3>Essential Insights</h3>
-            <p>Empowering teachers with data driven insights to tailor their learning environment.</p>
-            <br>
-            <h3>Uniquely Yours</h3>
-            <p>Discover the latitude to customize your students learning journey.</p>
-        </div>
-    </div>
+        
 
-    <div class="container">
-        <h2>Frequently Asked Questions</h2>
-        <div class="accordion" id="accordion">
-            <button class="accordion-btn">
-                What questions do you have?
-            </button>
-            <div class="accordion-panel">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus dolor dolores, ad et nam explicabo vitae sed, accusantium porro quas nesciunt! Est, voluptatem? Est qui eum quia ratione laudantium ut culpa, blanditiis libero animi illum. Id, atque voluptatum? Laudantium, nesciunt.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus dolor dolores, ad et nam explicabo vitae sed, accusantium porro quas nesciunt! Est, voluptatem? Est qui eum quia ratione laudantium ut culpa, blanditiis libero animi illum. Id, atque voluptatum? Laudantium, nesciunt.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus dolor dolores, ad et nam explicabo vitae sed, accusantium porro quas nesciunt! Est, voluptatem? Est qui eum quia ratione laudantium ut culpa, blanditiis libero animi illum. Id, atque voluptatum? Laudantium, nesciunt.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus dolor dolores, ad et nam explicabo vitae sed, accusantium porro quas nesciunt! Est, voluptatem? Est qui eum quia ratione laudantium ut culpa, blanditiis libero animi illum. Id, atque voluptatum? Laudantium, nesciunt.</p>
-            </div>
-        </div>
-    </div>
+        <!-- Bootsrap JS -->
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+            crossorigin="anonymous">
+        </script>
 
-    <form action="" class="form">
-        <h1 class="form__title">Need a lab for your classroom?</h1>
-        <p class="form__description">Get more information about Latitude Labs, 
-            and how you can get a custom lab made for your classroom needs.</p>
+        <!-- jQuery -->
 
-        <div class="form__group">
-            <input type="text" id="name" class="form__input" 
-            placeholder="" autocomplete="off">
-            <label for="name" class="form_label">Name</label>
-        </div>
-        <div class="form__group">
-            <input type="text" id="email" class="form__input" 
-            placeholder="">
-            <label for="email" class="form_label">Email</label>
-            <button class="form__button">Join</button>
-        </div>
-    </form>
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+        ></script>
 
-<!-- Third Party JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Main JS -->
+        <script type="text/javascript" src="js/main.js"></script>
 
-<!-- Project JS -->
-
-
-</body>
+    </body>
 </html>

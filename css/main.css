@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
+
+:root{
+    /* set font family
+    NOTE this isn't working fsr so it's acutally set in the body specifier */
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 20px;
+}
+
+body{
+
+    /* change default BS color vars */
+    
+    --ll-primary: #18a0fb;
+    --ll-secondary: var(--bs-white, white);
+    --bs-primary: var(--ll-primary);
+
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* NAVBAR */
+
+/* this works as an alternative to the color setting 
+in .nav-link:hover  */
+/* .navbar{
+    --bs-navbar-hover-color: var(--bs-light);
+} */
+
+.navbar-brand, 
+.nav-link{
+    color: var(--ll-primary);
+    margin-right: 1em !important;
+}
+
+.nav-link:hover{
+    color: var(--ll-secondary);
+    background-color: var(--ll-primary);
+}
+
+/* HERO */
+
+header{
+    width: 100%;
+    height: 100vh;
+
+    /* offeseting the top of the header to below the navbar height
+    this could also be done via jq. */
+    /* height: calc(100vh - 70px); */
+    /* position: relative; */
+    /* top: 70px; */
+
+    background-image: url("../images/hero/hero_still.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center;  */
+
+     /* offeseting the top of the header
+    background image to below the navbar height
+    this could also be done via jq. */
+    background-position: left 50% top 70px; 
+}
+
+header .overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(244, 244, 244, .25);
+}
+
+header #join_btn{
+    color: var(--bs-light);
+    background-color: var(--ll-primary);
+}
+
+header .hero-content{
+    /* this need to be changed bc relative position and using top 
+    causes overflow past the hero section, instead container should also be flex item, 
+    or a bs utility should be added to center the row within it */
+    position: relative;
+    top: 70%;
+    /* left: 50%; */
+    transform: translate(0%, -50%);
+    margin: 0 auto;
+
+    padding: 1em;
+    color: var(--ll-secondary);
+    text-align: center;
+}
+
+header .description h1{ 
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+header .description p{ 
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* FEATURES/SOLUTIONS */
+
+.feature-group h1{
+    font-weight: 600;
+}
+
+.feature-group h2{
+    font-weight: 500;
+}
+
+.feature-group .fg-header{
+    width: 100%;
+}
+
+.feature-group .fg-header .desc{
+    padding: 1.5em 2em 2em;
+}
+
+.feature-group .fg-header .desc p{
+    font-size: 1.1em;
+    font-weight: 400;
+    width: 40%;
+}
+
+.feature-group .fg-header img{
+    width: 100%;
+    height: 40vh;
+    min-height: 150px;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.feature-group .feature .f-desc{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /* padding-top: .75em;
+    padding-bottom: .75em; */
+}
+
+.feature-group .feature .f-desc p{
+    font-weight: 400;
+}
+
+/* instead choosing to handle this margin
+responsively with bs m-lg-* class */
+/* .feature-group .feature .f-vid, .f-img{
+    margin-left: 20%;
+} */
+
+/* add drop shadow to feature visuals */
+.feature-group .feature  video, .feature-group .feature img{
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* CREATIVE SOLUTIONS */
+
+.feature-group#creative-solutions{
+    background-color: rgba(251, 209, 177, .20);
+}
+
+/* SELF-GUIDED LEARNING */
+
+.feature-group#self-guided{
+    background-color: rgba(40, 101, 123, .20);
+}
