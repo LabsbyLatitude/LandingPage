@@ -166,3 +166,32 @@ responsively with bs m-lg-* class */
 .feature-group#self-guided{
     background-color: rgba(40, 101, 123, .20);
 }
+
+/* TESTIMONIALS */
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    /* display:block; */
+    padding: 2rem;
+    text-align: center;
+}
+
+blockquote {
+    margin: auto;
+    max-width: 800px;
+}
+
+blockquote p {
+    padding: 2rem;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
