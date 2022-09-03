@@ -143,6 +143,16 @@ header .description p{
     font-size: 1.1em;
     font-weight: 400;
     width: 40%;
+    /* min-width: 300px; */
+}
+
+/* set feature group header description to
+   max width on devices smaller than the 
+   bs lg breakpoint*/
+@media only all and (max-width: 991px){
+    .feature-group .fg-header .desc p{
+        width: 100%;
+    }
 }
 
 .feature-group .fg-header img{
@@ -209,7 +219,7 @@ blockquote {
 
 blockquote p {
     padding: 2rem;
-    background: #eee;
+    background: var(--ll-secondary);
     border-radius: 5px;
 }
 
