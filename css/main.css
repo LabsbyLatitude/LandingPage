@@ -11,9 +11,16 @@ body{
 
     /* change default BS color vars */
     
-    --ll-primary: #18a0fb;
-    --ll-secondary: var(--bs-white, white);
+    --ll-primary: #741c87;
+    /* --ll-secondary: var(--bs-white, white); */
+    --ll-accent: #2074ac;
+    --ll-secondary: #d8d4d8;
+    --ll-light: #ffffff;
     --bs-primary: var(--ll-primary);
+    --bs-info: var(--ll-accent);
+    --bs-success: var(--ll-accent);
+    --bs-secondary: var(--ll-secondary);
+    --bs-light: var(--ll-light, white);
 
     font-family: 'Montserrat', sans-serif !important;
 }
@@ -26,6 +33,10 @@ in .nav-link:hover  */
     --bs-navbar-hover-color: var(--bs-light);
 } */
 
+.navbar{
+    background-color: var(--ll-light);
+}
+
 .navbar-brand, 
 .nav-link{
     color: var(--ll-primary);
@@ -33,7 +44,7 @@ in .nav-link:hover  */
 }
 
 .nav-link:hover{
-    color: var(--ll-secondary);
+    color: var(--ll-light);
     background-color: var(--ll-primary);
 }
 
@@ -71,8 +82,15 @@ header .overlay{
 }
 
 header #join_btn{
-    color: var(--bs-light);
+    color: var(--ll-accent);
+    background-color: var(--ll-secondary);
+    font-weight: 600;
+}
+
+header #join_btn:hover{
     background-color: var(--ll-primary);
+    color: var(--ll-secondary);
+    border-color: var(--ll-secondary);
 }
 
 header .hero-content{
@@ -86,7 +104,7 @@ header .hero-content{
     margin: 0 auto;
 
     padding: 1em;
-    color: var(--ll-secondary);
+    color: var(--ll-light);
     text-align: center;
 }
 
@@ -99,6 +117,8 @@ header .description p{
     font-size: 1rem;
     font-weight: 500;
     font-style: italic;
+
+    /* color: var(--ll-secondary); */
 }
 
 /* FEATURES/SOLUTIONS */
@@ -168,6 +188,11 @@ responsively with bs m-lg-* class */
 }
 
 /* TESTIMONIALS */
+
+/* @TODO */
+/* .carousel{
+    --carousel-transition-duration: 5s;
+} */
 
 .carousel-item.active,
 .carousel-item-next,

@@ -21,4 +21,6 @@ $(document).ready(function (){
         );
     });
 
+    $(".carousel-item").attr("data-bs-interval", 5000);
+
 });

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8 />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
@@ -21,12 +21,12 @@
   <body>
     <!-- NAVBAR -->
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <!-- brand logo -->
-        <a class="navbar-brand" href="#">
-            <img src="./images/brand/logo/logo-official.png" style="margin: -10px;" alt="" width="70px" height="auto" class="d-inline-block align-text-top">
-            Latitude Labs
+        <a class="navbar-brand px-1 py-0" href="#">
+            <img src="./images/brand/logo/logo-official-text.png" style="margin: -10px;" alt="" width="70px" height="auto" class="d-inline-block align-text-top">
+            <!-- Latitude Labs -->
           </a>
         <!-- toggler button -->
         <button
@@ -166,7 +166,8 @@
               </div>
               <!-- visual -->
               <div class="col">
-                <div class="f-vid m-lg-5">
+                <!-- This video is too large and needs to be edited down -->
+                <!-- <div class="f-vid m-lg-5">
                   <video
                     loop
                     muted
@@ -185,6 +186,13 @@
                     />
                     Your browser does not support the webm or mp4 video type.
                   </video>
+                </div> --> 
+                <div class="f-img m-lg-5">
+                  <img
+                      class="img-fluid rounded-1"
+                      src="./images/creative_solutions/marina_waves-still.png"
+                      alt="."
+                    />
                 </div>
               </div>
             </div>
@@ -247,7 +255,7 @@
     <!-- TESTIMONIALS -->
 
     <div id="tesimonials">
-      <div id="testimonials-carousel" class="carousel carousel-dark slide" data-bs-ride="true">
+      <div id="testimonials-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <!-- indicators -->
         <div class="carousel-indicators">
           <button
