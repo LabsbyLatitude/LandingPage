@@ -218,7 +218,7 @@ blockquote {
 }
 
 blockquote p {
-    padding: 2rem;
+    padding: 2rem 5%;
     background: var(--ll-secondary);
     border-radius: 5px;
 }
