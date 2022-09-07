@@ -163,6 +163,12 @@ header .description p{
     object-position: 50% 30%;
 }
 
+.feature-group .feature .container{
+    min-width: 75%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
 .feature-group .feature .f-desc{
     padding-top: 5%;
     padding-bottom: 5%;
