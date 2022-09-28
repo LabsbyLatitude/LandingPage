@@ -283,101 +283,169 @@
     <!-- TESTIMONIALS -->
 
     <div id="tesimonials">
-      <div
-        id="testimonials-carousel"
-        class="carousel carousel-dark slide"
-        data-bs-ride="carousel"
-      >
-        <!-- indicators -->
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#testimonials-carousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Testimonial 1, middle school student"
-            aria-controls="#testimonials-carousel"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#testimonials-carousel"
-            data-bs-slide-to="1"
-            aria-label="Testimonial 2, "
-            aria-controls="#testimonials-carousel"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#testimonials-carousel"
-            data-bs-slide-to="2"
-            aria-label="Testimonial 3, "
-            aria-controls="#testimonials-carousel"
-          ></button>
-        </div>
+      <div class="container">
+        <div
+          id="testimonials-carousel"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <!-- indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#testimonials-carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Testimonial 1, middle school student"
+              aria-controls="#testimonials-carousel"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonials-carousel"
+              data-bs-slide-to="1"
+              aria-label="Testimonial 2, "
+              aria-controls="#testimonials-carousel"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonials-carousel"
+              data-bs-slide-to="2"
+              aria-label="Testimonial 3, "
+              aria-controls="#testimonials-carousel"
+            ></button>
+          </div>
 
-        <!-- slides -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <figure>
-              <blockquote class="blockquote">
-                <p>
-                  I would like to use sources like this more because it makes
-                  class work more interesting and more fun...
-                </p>
-              </blockquote>
-              <figcaption>
-                —8th Grade Student, <cite>Muwekma Ohlone Middle School</cite>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="carousel-item">
-            <figure>
-              <blockquote class="blockquote">
-                <p>
-                  ...the student can observe the simulation and have their own
-                  observation...
-                </p>
-              </blockquote>
-              <figcaption>
-                —8th Grade Student, <cite>Muwekma Ohlone Middle School</cite>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="carousel-item">
-            <figure>
-              <blockquote class="blockquote">
-                <p>
-                  I wish we used more sources like these, because it was really
-                  well made.
-                </p>
-              </blockquote>
-              <figcaption>
-                —8th Grade Student, <cite>Muwekma Ohlone Middle School</cite>
-              </figcaption>
-            </figure>
+          <!-- slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <figure>
+                <blockquote class="blockquote">
+                  <p>
+                    I would like to use sources like this more because it makes
+                    class work more interesting and more fun...
+                  </p>
+                </blockquote>
+                <figcaption>
+                  —8th Grade Student, <cite>Muwekma Ohlone Middle School</cite>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <blockquote class="blockquote">
+                  <p>
+                    ...the student can observe the simulation and have their own
+                    observation...
+                  </p>
+                </blockquote>
+                <figcaption>
+                  —8th Grade Student, <cite>Muwekma Ohlone Middle School</cite>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <blockquote class="blockquote">
+                  <p>
+                    I wish we used more sources like these, because it was
+                    really well made.
+                  </p>
+                </blockquote>
+                <figcaption>
+                  —8th Grade Student, <cite>Muwekma Ohlone Middle School</cite>
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
     <!-- Contact Form -->
 
+    <div class="contact-form" id="contact">
+      <div class="container">
+        <form>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="form header">
+                <h1 class="formTitle">Get in Touch!</h1>
+                <p class="formDesc">
+                  Join our newsletter to be the first to hear about new
+                  developments and the official launch of Latitude Labs.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 right">
+              <div class="form-group">
+                <label for="inputEmail" class="form-label visually-hidden"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  placeholder="name@example.edu"
+                  name="email"
+                  id="inputEmail"
+                  aria-describedby="privacyPolicy"
+                />
+              </div>
+              <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col">
+                  <div class="form-group">
+                    <label
+                      for="inputFirstName"
+                      class="form-label visually-hidden"
+                      >First Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="First Name"
+                      name=""
+                      id="inputFirstName"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label
+                      for="inputLastName"
+                      class="form-label visually-hidden"
+                      >Last Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="Last Name"
+                      name=""
+                      id="inputLastName"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div id="privacyPolicy" class="form-text">
+                  We'll never sell your personal information |
+                  <a href="#">Privacy Policy.</a>
+                </div>
+              </div>
+              <div class="form-group">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-lg btn-block"
+                  name=""
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <!-- Begin Mailchimp Signup Form -->
-    <link
-      href="//cdn-images.mailchimp.com/embedcode/classic-071822.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <style type="text/css">
-      #mc_embed_signup {
-        background: #fff;
-        clear: left;
-        font: 14px Helvetica, Arial, sans-serif;
-        width: 600px;
-      }
-      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
     <div id="mc_embed_signup">
       <form
         action="https://latitudelabs.us17.list-manage.com/subscribe/post?u=a68ff93a397841fda059f28a8&amp;id=8b27fb49ba&amp;f_id=00d352e0f0"
@@ -385,8 +453,7 @@
         id="mc-embedded-subscribe-form"
         name="mc-embedded-subscribe-form"
         class="validate"
-        target="_blank"
-        novalidate
+        target="_self"
       >
         <div id="mc_embed_signup_scroll">
           <h2>Get in Touch!</h2>
@@ -408,13 +475,31 @@
             <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
           </div>
           <div class="mc-field-group">
-            <label for="mce-FNAME">First Name </label>
-            <input type="text" value="" name="FNAME" class="" id="mce-FNAME" />
+            <label for="mce-FNAME"
+              >First Name <span class="asterisk">*</span>
+            </label>
+            <input
+              type="text"
+              value=""
+              name="FNAME"
+              class="required"
+              id="mce-FNAME"
+              required
+            />
             <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
           </div>
           <div class="mc-field-group">
-            <label for="mce-LNAME">Last Name </label>
-            <input type="text" value="" name="LNAME" class="" id="mce-LNAME" />
+            <label for="mce-LNAME"
+              >Last Name <span class="asterisk">*</span>
+            </label>
+            <input
+              type="text"
+              value=""
+              name="LNAME"
+              class="required"
+              id="mce-LNAME"
+              required
+            />
             <span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
           </div>
           <div id="mce-responses" class="clear foot">
@@ -447,43 +532,20 @@
                 id="mc-embedded-subscribe"
                 class="button"
               />
-              <!-- comment out Mailchimp branding -->
-              <!-- <p class="brandingLogo"> 
-            <a
-              href="http://eepurl.com/h_x4S1"
-              title="Mailchimp - email marketing made easy and fun"
-              ><img
-                src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
-            /></a>
-          </p> -->
+              <!-- <p class="brandingLogo">
+                <a
+                  href="http://eepurl.com/h_x4S1"
+                  title="Mailchimp - email marketing made easy and fun"
+                  ><img
+                    src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
+                /></a>
+              </p> -->
             </div>
           </div>
         </div>
       </form>
     </div>
-    <script
-      type="text/javascript"
-      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-    ></script>
-    <script type="text/javascript">
-      (function ($) {
-        window.fnames = new Array();
-        window.ftypes = new Array();
-        fnames[0] = "EMAIL";
-        ftypes[0] = "email";
-        fnames[1] = "FNAME";
-        ftypes[1] = "text";
-        fnames[2] = "LNAME";
-        ftypes[2] = "text";
-        fnames[3] = "ADDRESS";
-        ftypes[3] = "address";
-        fnames[4] = "PHONE";
-        ftypes[4] = "phone";
-        fnames[5] = "BIRTHDAY";
-        ftypes[5] = "birthday";
-      })(jQuery);
-      var $mcj = jQuery.noConflict(true);
-    </script>
+
     <!--End mc_embed_signup-->
 
     <!-- Bootsrap JS -->

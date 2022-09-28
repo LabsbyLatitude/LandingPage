@@ -220,7 +220,7 @@ responsively with bs m-lg-* class */
 
 blockquote {
     margin: auto;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 blockquote p {
@@ -229,10 +229,26 @@ blockquote p {
     border-radius: 5px;
 }
 
+/* add opening quote mark at start of quote */
 blockquote p::before {
     content: '\201C';
 }
 
+/* add closing quote mark at start of quote */
 blockquote p::after {
     content: '\201D';
+}
+
+/* Conctact Form */
+
+#contact{
+    margin-top: 100px;
+}
+
+.contact-form .form-group{
+    margin-bottom: 1rem;
+}
+
+.contact-form .formDesc{
+    color: var(--bs-gray-600);
 }
