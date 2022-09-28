@@ -242,7 +242,12 @@ blockquote p::after {
 /* Conctact Form */
 
 #contact{
-    margin-top: 100px;
+    padding-top: 100px;
+    background-color: var(--ll-secondary);
+}
+
+.contact-form .indicates-required{
+    font-size: small;
 }
 
 .contact-form .form-group{
@@ -251,4 +256,19 @@ blockquote p::after {
 
 .contact-form .formDesc{
     color: var(--bs-gray-600);
+}
+
+.contact-form button{
+    background-color: var(--ll-light);
+    color: var(--ll-accent);
+    border: .1em solid var(--ll-accent);
+
+    font-weight: 500;
+}
+
+.contact-form button:hover{
+    /* filter: brightness(.85); */
+    background-color: var(--ll-accent);
+    border: .1em solid var(--ll-accent);
+
 }
