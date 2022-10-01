@@ -8,7 +8,7 @@ $(document).ready(function (){
 
 
     // use jQuery to scroll to selected section
-    $(".navbar a").click(function () {
+    $(".navbar a, .hero a").click(function () {
         // console.log("#" + $(this).data("value"));
         const section_offset = $("#" + $(this).data("value")).offset().top;
         const nav_height = $(".navbar").outerHeight();

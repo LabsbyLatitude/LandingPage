@@ -104,6 +104,10 @@ header #join_btn:hover{
     border-color: var(--ll-secondary);
 }
 
+header .hero-content a{
+    text-decoration: none;
+}
+
 header .hero-content{
     /* this need to be changed bc relative position and using top 
     causes overflow past the hero section, instead container should also be flex item, 
