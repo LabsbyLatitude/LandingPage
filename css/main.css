@@ -12,6 +12,8 @@ body{
     /* change default BS color vars */
     
     --ll-primary: #741c87;
+    /* --ll-primary-30: rgba(var(--ll-primary), .3); */
+    --ll-primary-30: #731c8741;
     /* --ll-secondary: var(--bs-white, white); */
     --ll-accent: #2074ac;
     --ll-secondary: #d8d4d8;
@@ -52,24 +54,33 @@ in .nav-link:hover  */
 
 header{
     width: 100%;
-    height: 100vh;
-
     /* offeseting the top of the header to below the navbar height
     this could also be done via jq. */
-    /* height: calc(100vh - 70px); */
-    /* position: relative; */
-    /* top: 70px; */
+    height: calc(100vh - 70px);
+    position: relative;
+    top: 70px;
 
-    background-image: url("../images/hero/hero_still.png");
+    /* background-color: var(--ll-primary-30); */
+    background-color: rgba(40, 101, 123, .20);
+
+    /* Removed the full page hero image */
+    /* ------------------------------ */
+    /* background-image: url("../images/hero/hero_still.png");
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    /* background-position: center;  */
+    background-repeat: no-repeat; */
+
 
      /* offeseting the top of the header
     background image to below the navbar height
     this could also be done via jq. */
-    background-position: left 50% top 70px; 
+    /* background-position: left 50% top 70px;     */
+    /* ------------------------------ */
+
+
+    
+    
+    /* background-position: center;  */
 }
 
 header .overlay{
@@ -94,6 +105,22 @@ header #join_btn:hover{
 }
 
 header .hero-content{
+    /* this need to be changed bc relative position and using top 
+    causes overflow past the hero section, instead container should also be flex item, 
+    or a bs utility should be added to center the row within it */
+    position: relative;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(0%, -50%);
+    /* margin: 0 auto; */
+
+    padding: 1em;
+    color: var(--ll-light);
+    /* text-align: center; */
+}
+
+/* DEPRECATED */
+header .hero-content-old{
     /* this need to be changed bc relative position and using top 
     causes overflow past the hero section, instead container should also be flex item, 
     or a bs utility should be added to center the row within it */
