@@ -12,8 +12,10 @@ body{
     /* change default BS color vars */
     
     --ll-primary: #741c87;
+    --ll-primary-shade1: #d5bbdb;
     /* --ll-secondary: var(--bs-white, white); */
     --ll-accent: #2074ac;
+    --ll-accent-shade1: #bdd5e6;
     --ll-secondary: #d8d4d8;
     --ll-light: #ffffff;
     --bs-primary: var(--ll-primary);
@@ -52,33 +54,46 @@ in .nav-link:hover  */
 
 header{
     width: 100%;
-    height: 100vh;
-
     /* offeseting the top of the header to below the navbar height
-    this could also be done via jq. */
-    /* height: calc(100vh - 70px); */
-    /* position: relative; */
-    /* top: 70px; */
+    this could also be done via jq. 
+    This makes vertically centering child elements easier because 
+    the border box correlates to only what's visible. */
+    height: calc(100vh - 70px); /* ensure full page header */
+    position: relative;
+    margin-top: 70px;
 
-    background-image: url("../images/hero/hero_still.png");
+    background-color: var(--ll-primary-shade1);
+    /* background-color: rgba(40, 101, 123, .20); */
+
+
+
+    /* Removed the full page hero image */
+    /* ------------------------------ */
+    /* background-image: url("../images/hero/hero_still.png");
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    /* background-position: center;  */
+    background-repeat: no-repeat; */
+
 
      /* offeseting the top of the header
     background image to below the navbar height
     this could also be done via jq. */
-    background-position: left 50% top 70px; 
+    /* background-position: left 50% top 70px;     */
+    /* ------------------------------ */
+
+    
+
+    /* background-position: center;  */
 }
 
-header .overlay{
+.overlay{
     position: absolute;
     min-height: 100%;
     min-width: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(244, 244, 244, .25);
+    /* background-color: rgba(244, 244, 244, .25); */
+    background-color: rgba(255, 255, 255, .70);
 }
 
 header #join_btn{
@@ -93,11 +108,28 @@ header #join_btn:hover{
     border-color: var(--ll-secondary);
 }
 
+header .hero-content{
+    /* this need to be changed bc relative position and using top causes overflow past
+     the hero section, instead the bs container and row should encompass the, 
+    the whole header and a bs utility should be added to center the items within it */
+    position: relative;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(0%, -50%);
+    /* margin: 0 auto; */
+
+    padding: 1em;
+    /* color: var(--ll-light); */
+    color: var(--bs-gray-700);
+    /* text-align: center; */
+}
+
 header .hero-content a{
     text-decoration: none;
 }
 
-header .hero-content{
+/* DEPRECATED */
+header .hero-content-old{
     /* this need to be changed bc relative position and using top 
     causes overflow past the hero section, instead container should also be flex item, 
     or a bs utility should be added to center the row within it */
@@ -110,6 +142,10 @@ header .hero-content{
     padding: 1em;
     color: var(--ll-light);
     text-align: center;
+}
+
+header .hero-content img{
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
 }
 
 header .description h1{ 
@@ -199,6 +235,8 @@ responsively with bs m-lg-* class */
 
 .feature-group#creative-solutions{
     background-color: rgba(251, 209, 177, .20);
+    /* background-color: var(--ll-primary-shade1); */
+    /* background-color: var(--ll-secondary); */
 }
 
 /* SELF-GUIDED LEARNING */
@@ -212,6 +250,11 @@ responsively with bs m-lg-* class */
 /* @TODO */
 /* .carousel{
     --carousel-transition-duration: 5s;
+} */
+
+/* #testimonials{
+    background-color: var(--ll-accent-shade1);
+    position: relative;
 } */
 
 .carousel-item.active,
