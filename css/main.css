@@ -12,16 +12,16 @@ body{
     /* change default BS color vars */
     
     --ll-primary: #741c87;
-    --ll-primary-shade1: #d5bbdb;
+    --ll-primary-tint11: #e9c1f2;
     /* --ll-secondary: var(--bs-white, white); */
     --ll-accent: #2074ac;
-    --ll-accent-shade1: #bdd5e6;
-    --ll-secondary: #d8d4d8;
+    --ll-accent-tint11: #c8e3f5;
+    --ll-neutral: #d8d4d8;
     --ll-light: #ffffff;
     --bs-primary: var(--ll-primary);
     --bs-info: var(--ll-accent);
     --bs-success: var(--ll-accent);
-    --bs-secondary: var(--ll-secondary);
+    --bs-secondary: var(--ll-neutral);
     --bs-light: var(--ll-light, white);
 
     font-family: 'Montserrat', sans-serif !important;
@@ -62,7 +62,7 @@ header{
     position: relative;
     margin-top: 70px;
 
-    background-color: var(--ll-primary-shade1);
+    background-color: var(--ll-primary-tint11);
     /* background-color: rgba(40, 101, 123, .20); */
 
 
@@ -98,14 +98,14 @@ header{
 
 header #join_btn{
     color: var(--ll-accent);
-    background-color: var(--ll-secondary);
+    background-color: var(--ll-neutral);
     font-weight: 600;
 }
 
 header #join_btn:hover{
     background-color: var(--ll-primary);
-    color: var(--ll-secondary);
-    border-color: var(--ll-secondary);
+    color: var(--ll-neutral);
+    border-color: var(--ll-neutral);
 }
 
 header .hero-content{
@@ -234,7 +234,7 @@ responsively with bs m-lg-* class */
 /* CREATIVE SOLUTIONS */
 
 .feature-group#creative-solutions{
-    background-color: rgba(251, 209, 177, .20);
+    background-color: var(--ll-light);
     /* background-color: var(--ll-primary-shade1); */
     /* background-color: var(--ll-secondary); */
 }
@@ -242,7 +242,7 @@ responsively with bs m-lg-* class */
 /* SELF-GUIDED LEARNING */
 
 .feature-group#self-guided{
-    background-color: rgba(40, 101, 123, .20);
+    background-color: var(--ll-accent-tint11);
 }
 
 /* TESTIMONIALS */
@@ -272,7 +272,7 @@ blockquote {
 
 blockquote p {
     padding: 2rem 5%;
-    background: var(--ll-secondary);
+    background: var(--ll-neutral);
     border-radius: 5px;
 }
 
@@ -290,7 +290,7 @@ blockquote p::after {
 
 #contact{
     padding-top: 100px;
-    background-color: var(--ll-secondary);
+    background-color: var(--ll-neutral);
 }
 
 .contact-form .indicates-required{
