@@ -98,6 +98,7 @@ header{
 
 header #join_btn{
     color: var(--ll-accent);
+    border: .1em solid var(--ll-accent);
     background-color: var(--ll-neutral);
     font-weight: 600;
 }
@@ -106,6 +107,14 @@ header #join_btn:hover{
     background-color: var(--ll-primary);
     color: var(--ll-neutral);
     border-color: var(--ll-neutral);
+}
+
+header #join_btn a{
+    color: inherit;
+}
+
+header #join_btn a:hover{
+    color: inherit;
 }
 
 header .hero-content{
