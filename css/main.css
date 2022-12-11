@@ -104,9 +104,9 @@ header #join_btn{
 }
 
 header #join_btn:hover{
-    background-color: var(--ll-primary);
+    background-color: var(--ll-accent);
     color: var(--ll-neutral);
-    border-color: var(--ll-neutral);
+    border-color: none;
 }
 
 header #join_btn a{
