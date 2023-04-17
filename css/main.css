@@ -266,6 +266,10 @@ responsively with bs m-lg-* class */
     position: relative;
 } */
 
+#testimonials{
+    box-shadow: inset 0px 0px 15px 1px rgba(116, 28, 135, .6);
+}
+
 .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev{
