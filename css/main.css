@@ -170,6 +170,15 @@ header .description p{
     /* color: var(--ll-secondary); */
 }
 
+#value-prop{
+    background-color: var(--ll-accent-tint11);
+}
+
+.value-prop h2{
+    color: var(--ll-primary);
+    text-align: center;
+}
+
 /* FEATURES/SOLUTIONS */
 
 .feature-group h1{
