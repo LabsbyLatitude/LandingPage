@@ -96,26 +96,28 @@ header{
     background-color: rgba(255, 255, 255, .70);
 }
 
-header #join_btn{
+/* Header Buttons */
+header #header_btn{
     color: var(--ll-accent);
     border: .1em solid var(--ll-accent);
     background-color: var(--ll-neutral);
     font-weight: 600;
 }
 
-header #join_btn:hover{
+header #header_btn:hover{
     background-color: var(--ll-accent);
     color: var(--ll-neutral);
     border-color: none;
 }
 
-header #join_btn a{
+header #header_btn a{
     color: inherit;
 }
 
-header #join_btn a:hover{
+header #header_btn a:hover{
     color: inherit;
 }
+
 
 header .hero-content{
     /* this need to be changed bc relative position and using top causes overflow past

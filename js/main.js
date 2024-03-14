@@ -15,19 +15,32 @@ $(document).ready(function () {
     // alert(nav_height);
     // $("header").css("top", nav_height);
 
-
-    // use jQuery to scroll to selected section
+    // Set click handler for nav bar links
     $(".navbar a, .hero a").click(function () {
-        // console.log("#" + $(this).data("value"));
-        const section_offset = $("#" + $(this).data("value")).offset().top;
-        const nav_height = $(".navbar").outerHeight();
+        
+        // get the name of the link, and thus it's corresponding page
+        // section
+        const section_name = $(this).data("value");
+        
+        // for donation link, skip for now
+        if (section_name === 'donate') {
+            
+        }
+        // otherwise use jQuery to scroll to selected section
+        else {
 
-        $("body,html").animate(
-            {
-                scrollTop: section_offset - nav_height,
-            },
-            1000
-        );
+            // console.log("#" + $(this).data("value"));
+            const section_offset = $("#" + section_name).offset().top;
+            const nav_height = $(".navbar").outerHeight();
+    
+            $("body,html").animate(
+                {
+                    scrollTop: section_offset - nav_height,
+                },
+                1000
+            );
+        }
+                    
     });
 
     $(".carousel-item").attr("data-bs-interval", 5000);

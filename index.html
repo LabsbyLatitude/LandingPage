@@ -89,6 +89,10 @@
             <li class="nav-item">
               <a class="nav-link" data-value="contact" href="#">Contact</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" data-value="donate" href="https://www.paypal.com/donate/?hosted_button_id=VLKWFBP5AYKJN">donate</a>
+              <div id="paypal-donate-button-container"></div>
+            </li>
           </ul>
         </div>
       </div>
@@ -118,14 +122,23 @@
           <!-- description -->
           <div class="col order-lg-1">
             <div class="description">
-              <h1>Make Everyday A Field Trip</h1>
+              <h1>Make Every Day A Field Trip</h1>
               <p>
                 Empowering teachers to create immersive learning spaces
                 everywhere
               </p>
-              <button class="btn btn-primary" type="button" id="join_btn">
-                <a data-value="contact" href="#">Join Today</a>
-              </button>
+              <div class="row">
+                <div class="col-4">
+                  <button class="btn btn-primary" type="button" id="header_btn">
+                    <a data-value="contact" href="#">Join Today</a>
+                  </button>
+                </div>
+                <div class="col">
+                  <button class="btn btn-primary" type="button" id="header_btn">
+                    <a data-value="donate" href="https://www.paypal.com/donate/?hosted_button_id=VLKWFBP5AYKJN">Donate</a>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -556,6 +569,9 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+
+    <!-- PayPal Donation SDK -->
+    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
 
     <!-- Main JS -->
     <script type="text/javascript" src="js/main.js"></script>
