@@ -371,7 +371,7 @@ blockquote p::after {
     content: '\201D';
 }
 
-/* Conctact Form */
+/* Contact Form */
 
 #contact{
     padding-top: 100px;
@@ -403,4 +403,22 @@ blockquote p::after {
     background-color: var(--ll-accent);
     border: .1em solid var(--ll-accent);
 
+}
+
+/* Footer */
+
+#footer{
+    padding-top: 100px;
+    background-color: var(--ll-primary);
+}
+
+.footer h1, 
+.footer h2, 
+.footer h3, 
+.footer h4{
+    color: var(--ll-light);
+}
+
+.footer .content{
+    color: var(--ll-neutral);
 }
