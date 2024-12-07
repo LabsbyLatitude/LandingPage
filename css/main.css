@@ -371,6 +371,44 @@ blockquote p::after {
     content: '\201D';
 }
 
+/* Lab Reports */
+
+.reports-section{
+    color: var(--bs-gray-700);
+    background-color: var(--ll-light);
+}
+
+.reports-section h1{
+    font-weight: 600;
+}
+
+.reports-section h2{
+    font-weight: 500;
+}
+
+.reports-section .rs-header{
+    width: 100%;
+}
+
+.reports-section .rs-header .desc{
+    padding: 1.5em 2em 2em;
+}
+
+.reports-section .rs-header .desc p{
+    font-size: 1.1em;
+    font-weight: 400;
+    width: 40%;
+    /* min-width: 300px; */
+}
+/* set reports section header description to
+   max width on devices smaller than the 
+   bs lg breakpoint*/
+   @media only all and (max-width: 991px){
+    .reports-section .rs-header .desc p{
+        width: 100%;
+    }
+}
+
 /* Contact Form */
 
 #contact{
